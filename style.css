@@ -134,11 +134,13 @@ img {
     border: none;
 
     background-color: transparent;
-    text-align: center;    
+    text-align: center;   
+    cursor: pointer; 
 }
 
 .btn-menu-close {
     display: none;    
+    cursor: pointer;
 }
 
 .btn-menu-open img {
