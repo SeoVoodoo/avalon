@@ -531,12 +531,13 @@ img {
     }
 
     .btn-menu-close {
-        position:absolute;
+        position: absolute;
         top: 0;
         right: 0;
 
         display: block;
         width: 40px;
+        height: 40px;
         border: none;
 
         background-color: transparent;
@@ -559,6 +560,10 @@ img {
 
     .category-item .title {
         bottom: 72px;
+    }
+
+    .category-item:hover .title {
+        transform: none;   
     }
 
     .btn {
