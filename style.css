@@ -422,7 +422,7 @@ img {
     display: grid;
     grid-gap: 2px;
     grid-template-columns: repeat(6, minmax(75px, 1fr));
-    grid-template-rows: repeat(5, minmax(100px, auto));
+    grid-template-rows: repeat(6, minmax(100px, auto));
 
     list-style: none;    
 }
@@ -573,7 +573,7 @@ img {
     }
 
     .btn-category {
-        width: 200px;
+        width: 186px;
         padding: 6px 16px;
         opacity: 1;
     }
