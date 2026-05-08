@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - шкафы купе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <main class="main">
+        <section class="sidebar">
+            <nav class="navigation">
+                <a class="navigation-logo" href="/">
+                    <img src="assets/img/logo.png" width="240" height="68" alt="логотип сайта">
+                </a>
+
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-current" href="#">Каталог мебели</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Мебель на заказ</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">О компании</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Покупателям</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Наши работы</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Блог</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <footer class="footer">
+                <address class="footer-contacts">
+                    <p class="contact-label">Наш телефон</p>
+                    <a class="footer-contact footer-phone" href="tel:+749512134567">+7 (495) 1213-45-67</a>
+
+                    <p class="contact-label">Наш адрес</p>
+                    <p class="footer-contact footer-address">Москва, улица 2000 лет взятия Мосссады 32</p>
+                </address>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a class="social-link" href="https://t.me/htmlacademy">
+                            <span class="visually-hidden">Телеграмм</span>
+                           <span class="social-icon social-icon-telegramm" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+                            <span class="visually-hidden">Max</span>
+                            <span class="social-icon social-icon-max" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://vk.com/htmlacademy">
+                            <span class="visually-hidden">Вконтакте</span>
+                            <span class="social-icon social-icon-vk" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                </ul>
+                <p><a class="developer" href="https://seovoodoo.guru">Разработано в СеоВуду</a></p>
+            </footer>
+            <button class="btn-menu-close" type="button">
+                <img src="assets/img/ico/close.svg" width="40" height="40" alt="закрыть меню">
+            </button>
+        </section>
+
+        <section class="sidebar-mobile">
+            <nav class="navigation" style="flex-grow: 0">
+                <a class="navigation-logo" href="/" style="padding: 0 4px 16px; transition: opacity 0.3s linear 0.3s;">
+                    <img src="assets/img/logo-mobile.svg" width="48" height="72" alt="логотип сайта">
+                </a>
+            </nav>
+
+            <button class="btn-menu-open" type="button">
+                <img src="assets/img/ico/menu.svg" width="40" height="40" alt="открыть меню">
+            </button>
+            
+
+            <footer class="footer" style="padding: 0; transition: opacity 0.3s linear 0.3s;">
+                <address class="footer-contacts">                    
+                    <a 
+                        class="footer-contact footer-phone"  
+                        href="tel:+749512134567"
+                        style="width: 24px; margin: 0 auto 36px;"
+                    >
+                    </a>                    
+                </address>
+
+                <ul class="social-list" style="flex-direction: column; align-items: center; padding: 0 0 72px;">
+                    <li class="social-item">
+                        <a class="social-link" href="https://t.me/htmlacademy">
+                            <span class="visually-hidden">Телеграмм</span>
+                           <span class="social-icon social-icon-telegramm" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+                            <span class="visually-hidden">Max</span>
+                            <span class="social-icon social-icon-max" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://vk.com/htmlacademy">
+                            <span class="visually-hidden">Вконтакте</span>
+                            <span class="social-icon social-icon-vk" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                </ul>                
+            </footer>
+        </section>
+        
+        <div class="content">            
+            <ol class="breadcrumbs-list">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link">Шкафы-купе</a>
+                </li>                
+            </ol> 
+            <h2 class="title-h2">Шкафы-купе под заказ</h2>   
+            
+            <section class="catalog-cupboards">
+                <h2 class="visually-hidden">Список шкафов купе</h2>
+
+                <div class="list-management-wrapp">
+                    <button type="button" class="btn btn-color-primary btn-filter">
+                        Фильтровать
+                        <span class="number-selected-filters">10</span>
+                    </button>
+                    <p class="number-products-found">Найдено товаров: <span>4178</span></p>
+                    <select class="control-select" aria-label="Сортировка">
+                        <option value="popular">Сначала Популярные</option>
+                        <option value="stocks">Сначала Акции</option>
+                        <option value="low-cost">Сначала Недорогие</option>
+                        <option value="expensive">Сначала Дорогие</option>
+                    </select>
+                </div>
+
+                <ul class="product-list">
+                    <li class="product-item">
+                        <image src="assets/img/catalog/shkaf.png" width="366" height="366" alt="" />
+                        <div class="product-info">
+                            <p class="product-name">Шкаф-купе 2-дв Моцарелла с зеркалом дуб сонома/черный с подсветкой</p>
+                            <p class="product-article-number">Код: 105636</p>
+                            <p class="product-price"><span>от</span> 25 000 ₽</p>
+                            <a class="btn btn-color-primary btn-product" href="">Посмотреть</a>
+                        </div>
+                        <span class="badge badge-hit">Хит продаж</span>
+                    </li>
+                    <li class="product-item">
+                        <image src="assets/img/catalog/shkaf.png" width="366" height="366" alt="" />
+                        <div class="product-info">
+                            <p class="product-name">Шкаф-купе 2-дв Моцарелла с зеркалом дуб сонома/черный с подсветкой</p>
+                            <p class="product-article-number">Код: 105636</p>
+                            <p class="product-price"><span>от</span> 25 000 ₽</p>
+                            <a class="btn btn-color-primary btn-product" href="">Посмотреть</a>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <image src="assets/img/catalog/shkaf.png" width="366" height="366" alt="" />
+                        <div class="product-info">
+                            <p class="product-name">Шкаф-купе 2-дв Моцарелла с зеркалом дуб сонома/черный с подсветкой</p>
+                            <p class="product-article-number">Код: 105636</p>
+                            <p class="product-price"><span>от</span> 25 000 ₽</p>
+                            <a class="btn btn-color-primary btn-product" href="">Посмотреть</a>
+                        </div>
+                        <span class="badge badge-new">Новинка</span>
+                    </li>
+                    <li class="product-item">
+                        <image src="assets/img/catalog/shkaf.png" width="366" height="366" alt="" />
+                        <div class="product-info">
+                            <p class="product-name">Шкаф-купе 2-дв Моцарелла с зеркалом дуб сонома/черный с подсветкой</p>
+                            <p class="product-article-number">Код: 105636</p>
+                            <p class="product-price"><span>от</span> 25 000 ₽</p>
+                            <a class="btn btn-color-primary btn-product" href="">Посмотреть</a>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <image src="assets/img/catalog/shkaf.png" width="366" height="366" alt="" />
+                        <div class="product-info">
+                            <p class="product-name">Шкаф-купе 2-дв Моцарелла с зеркалом дуб сонома/черный с подсветкой</p>
+                            <p class="product-article-number">Код: 105636</p>
+                            <p class="product-price"><span>от</span> 25 000 ₽</p>
+                            <a class="btn btn-color-primary btn-product" href="">Посмотреть</a>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <image src="assets/img/catalog/shkaf.png" width="366" height="366" alt="" />
+                        <div class="product-info">
+                            <p class="product-name">Шкаф-купе 2-дв Моцарелла с зеркалом дуб сонома/черный с подсветкой</p>
+                            <p class="product-article-number">Код: 105636</p>
+                            <p class="product-price"><span>от</span> 25 000 ₽</p>
+                            <a class="btn btn-color-primary btn-product" href="">Посмотреть</a>
+                        </div>
+                        <span class="badge badge-sale">Акция</span>
+                    </li>
+                </ul>
+                <div class="pagination-wrap">
+                    <ul class="pagination-list">
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link pagination-link-prev"><span class="control">Назад<span></a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link pagination-link-current">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link pagination-text">...</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link">5</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link">6</a>
+                        </li>                    
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link pagination-link-next"><span class="control">Вперед</span></a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-color-primary btn-show-more">Показать ещё <span class="items-left-show">24</span></button>
+                </div>
+                
+            </section>
+            <section class="category-description">
+                <h3 class="category-description-title">SEO заголовок</h3>
+                <p>Покупка мебели на заказ в нашем интернет-магазине — это отличный способ создать уникальный интерьер, который будет отражать ваш стиль и предпочтения. Мы предлагаем широкий ассортимент материалов и дизайнов, чтобы вы могли выбрать именно то, что вам нужно. Заказывая мебель у нас, вы получаете возможность адаптировать размеры и цвет под ваши требования, что делает каждую деталь идеальной для вашего пространства.</p>
+                <p>Кроме того, мебель на заказ — это не только стиль, но и качество. Мы работаем только с проверенными производителями, что гарантирует долговечность и надежность нашей продукции. Не упустите шанс преобразить свой дом с помощью индивидуально подобранной мебели, которая станет настоящим украшением вашего интерьера!</p>
+            </section>
+        </div>
+
+        <div class="modal-filter">
+            <div class="filter-wrap">
+
+            <button class="btn-filter-close" type="button">
+                <img src="assets/img/ico/close.svg" width="40" height="40" alt="закрыть фильтр">
+            </button>
+            <h4 class="title-h4">Фильтры</h4>
+
+            <form class="catalog-filter" action="" method="get">                
+
+                <div class="filter-group-wrap">
+                    
+                    <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-group-name">Цена</legend>
+                        <div class="range" style="--value-1: 10000; --value-2: 75000;">                            
+                            <div class="track"></div>
+                            <div class="progress"></div>
+                            <div class="thumbs">
+                                <input class="range-input" id="tailmetr1" type="range" min="0" max="100000" value="10000" step="100" aria-valuemin="0" aria-valuemax="100000" aria-orientation="horizontal">
+                                <output class="range-output range-output-min" id="output" for="tailmetr1" style="--value: var(--value-1);">10 000₽</output>
+                                
+                                <input class="range-input" id="tailmetr2" type="range" min="0" max="100000" value="75000" step="100" aria-valuemin="0" aria-valuemax="100000" aria-orientation="horizontal">                                
+                                <output class="range-output range-output-max" id="output" for="tailmetr2" style="--value: var(--value-2);">75 000₽</output>
+                            </div>      
+                         </div>
+                    </fieldset>
+
+                    <fieldset class="catalog-filter-group">
+                        <div class="legend-wrap">
+                            <legend class="catalog-filter-group-name">Тип шкафа</legend>
+                            <button class="toggle-button" type="button" aria-expanded="false" aria-controls="content-1">                            
+                                <span></span>                                
+                            </button>
+                        </div>
+                        
+                        <ul class="catalog-filter-list" id="content-1" hidden>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input visually-hidden" type="checkbox" name="straight" disabled>
+                                    <span class="control-mark"></span>
+                                    Прямой
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input visually-hidden" type="checkbox" name="angular">
+                                    <span class="control-mark"></span>
+                                    Угловой
+                                </label>
+                            </li>                            
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="catalog-filter-group">                        
+                        <div class="legend-wrap">
+                            <legend class="catalog-filter-group-name">Размер шкафа</legend>
+                            <button class="toggle-button" type="button" aria-expanded="false" aria-controls="content-2">                            
+                                <span></span>                                
+                            </button>
+                        </div>
+
+
+                        <ul class="catalog-filter-list" id="content-2" hidden>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input visually-hidden" type="checkbox" name="var-1">
+                                    <span class="control-mark"></span>
+                                    Маленький
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input visually-hidden" type="checkbox" name="var-2">
+                                    <span class="control-mark"></span>
+                                    Средний
+                                </label>
+                            </li>   
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input visually-hidden" type="checkbox" name="var-2">
+                                    <span class="control-mark"></span>
+                                    Большой
+                                </label>
+                            </li>                          
+                        </ul>
+                    </fieldset>
+                    
+
+                    <fieldset class="catalog-filter-group">
+                        
+                        <div class="legend-wrap">
+                            <legend class="catalog-filter-group-name">Тип фасада</legend>
+                            <button class="toggle-button" type="button" aria-expanded="false" aria-controls="content-3">                            
+                                <span></span>                                
+                            </button>
+                        </div>
+
+                        <ul class="catalog-filter-list facade-list" id="content-3" hidden>
+                            <li class="catalog-filter-item facade-item">
+                                <label class="control control-facade">
+                                    <input class="control-input visually-hidden" type="checkbox" name="ldsp">                                    
+                                     ЛДСП
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item facade-item">
+                                <label class="control control-facade">
+                                    <input class="control-input visually-hidden" type="checkbox" name="mdf" checked>                                    
+                                     МДФ
+                                </label>
+                            </li> 
+                            <li class="catalog-filter-item facade-item">
+                                <label class="control control-facade">
+                                    <input class="control-input visually-hidden" type="checkbox" name="glass">                                    
+                                     Стекло
+                                </label>
+                            </li>     
+                            <li class="catalog-filter-item facade-item">
+                                <label class="control control-facade">
+                                    <input class="control-input visually-hidden" type="checkbox" name="mirror">                                    
+                                     Зеркало
+                                </label>
+                            </li> 
+                            <li class="catalog-filter-item facade-item">
+                                <label class="control control-facade">
+                                    <input class="control-input visually-hidden" type="checkbox" name="combined">                                    
+                                     Комбинированные
+                                </label>
+                            </li>                      
+                        </ul>
+                    </fieldset>                    
+
+                    <fieldset class="catalog-filter-group">
+                        
+                        <div class="legend-wrap">
+                            <legend class="catalog-filter-group-name">Количество дверей</legend>
+                            <button class="toggle-button" type="button" aria-expanded="false" aria-controls="content-4">                            
+                                <span></span>                                
+                            </button>
+                        </div>
+
+                        <ul class="catalog-filter-list" id="content-4" hidden>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input visually-hidden" type="checkbox" name="1" checked>
+                                    <span class="control-mark"></span>
+                                    1
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input visually-hidden" type="checkbox" name="2">
+                                    <span class="control-mark"></span>
+                                    2
+                                </label>
+                            </li> 
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input visually-hidden" type="checkbox" name="3">
+                                    <span class="control-mark"></span>
+                                    3
+                                </label>
+                            </li>                            
+                        </ul>
+                    </fieldset>
+                </div>
+                
+                <div class="filter-footer">
+                    <p class="number-products-found">Найдено товаров: <span>24</span></p>
+                    <div class="filter-button-wrap">                    
+                        <button class="btn btn-reset" type="reset">Сбросить фильтры</button>
+                        <button type="submit" class="btn btn-color-primary btn-filter btn-filter-apply">Применить фильтр</button>
+                    </div> 
+                </div>
+                               
+            </form>
+            </div>
+        </div>
+        
+    </main> 
+    <script src="js/script.js"></script>   
+</body>
+</html>
