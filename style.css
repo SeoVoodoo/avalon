@@ -926,8 +926,8 @@ p:has(.developer) {
     --track-width: 382px;
 
     --range-progress-left: min(
-        calc(var(--value-1)/100000 * var(--track-width)),
-        calc(var(--value-2)/100000 * var(--track-width))
+        calc(var(--value-1) / 100000 * var(--track-width)),
+        calc(var(--value-2) / 100000 * var(--track-width))
     );
 
     --range-progress-w: calc((var(--value-2) - var(--value-1)) / 100000 * var(--track-width));
@@ -942,7 +942,9 @@ p:has(.developer) {
     --range-output-offset-xy: calc(var(--value)/1000 * -0.95%), 0;
     --range-output-margin: calc(6 / (var(--value)/1000 + 1) * 1px); */
 
-    --range-output-left: calc(var(--track-width) / (100000 / var(--value)));    
+    --range-output-left: calc(var(--track-width) / (100000 / var(--value)));   
+   
+     
 }
 
 /* .range-label {
@@ -1111,36 +1113,14 @@ p:has(.developer) {
     transition: 0ms;
 }
 
-      /* .tickmarks {
-        width: var(--tickmarks-w);
-        height: 30px;
-        padding-inline: 4px 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        color: white;
-      } */
+.tickmarks {
 
-      /* option {
-        position: relative;
-        padding-top: 10px;
-        padding-left: 4px;
-        width: 10px;
-        font-size: 14px;
-      }
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
 
-      option::after {
-        content: "";
-        display: initial;
-        position: absolute;
-        top: var(--option-after-top);
-        left: 10px;
-        width: 3px;
-        height: var(--option-after-h);
-        margin: 0 auto;
-        background: #c6c6c6;
-        z-index: -1;
-      } */
+    color: #181818;
+}       
 
 .legend-wrap {
     display: flex;
