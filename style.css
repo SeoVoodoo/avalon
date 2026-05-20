@@ -90,10 +90,21 @@ img {
     margin-bottom: 40px;
 
     font-family: 'Lora';
-    font-size: 20px;
+    font-size: 22px;
     line-height: 120%;
     font-weight: 500;
 }
+
+.title-h3 {
+    margin: 0;
+    margin-bottom: 12px;
+
+    font-family: 'Lora';
+    font-size: 22px;
+    line-height: 120%;
+    font-weight: 600;
+}
+
 
 .btn-color-primary {
     background-color: #80B09C;    
@@ -355,7 +366,9 @@ img {
   right: 0;
   bottom: 0;
 
-  margin: auto;  
+  margin: auto; 
+  background-size: 40px; 
+  background-repeat: no-repeat;
 }
 
 .social-icon-telegramm {  
@@ -1345,6 +1358,173 @@ p:has(.developer) {
     max-width: 1060px;
     margin-bottom: 24px;
 }
+
+/* ************ Контакты Старт **************  */
+
+.map {
+    margin-bottom: 24px;
+}
+
+.contacts-footer {
+    display: flex;
+    gap: 64px;
+}
+
+.feedback-block {
+    width: 664px;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-single-text {
+    margin: 0;
+    margin-bottom: 64px;
+
+    font-family: 'Inter';
+    font-size: 18px;
+}
+
+
+.agree-wrap {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    margin-bottom: 24px;
+}
+
+.agree-input {
+    margin: 0;
+}
+
+.agree-text {
+    margin: 0;
+
+    font-family: 'OpenSans';
+    font-size: 12px;    
+}
+
+.feedback .control {
+    margin-bottom: 8px;
+
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+
+    background-color: #F8F9FB;
+}
+
+.feedback .field-email,
+.feedback .field-message {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 24px;
+    border: 1px solid #E5E5E7;
+
+    background-color: #F8F9FB;
+    color: #2B2D2F;
+    font-size: 14px;
+}
+
+
+.feedback .field-email {
+    height: 56px;    
+}
+
+.feedback .field-message {
+  resize: none;
+  height: 127px;
+}
+
+
+.feedback .field-message::placeholder {
+  color: rgb(165, 165, 165);
+  text-transform: capitalize;
+}
+
+.feedback .field-email:focus-visible,
+.feedback .field-message:focus-visible {
+  outline: rgb(165, 165, 165) solid 1px;
+}
+
+.btn-submit {
+  max-width: 300px;
+  padding: 14px;
+  border-radius: 1px;
+  border: none;
+
+  font-family: 'Inter';
+  text-align: center;
+}
+
+.phone-block .title-h3 {
+    margin-bottom: 64px;
+}
+
+.phone-block .data  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    margin-bottom: 64px;
+}
+
+.phone {
+    width: 320px;
+}
+
+.phone-number {
+    font-size: 20px;
+}
+
+.phone-number,
+.store-address {
+    margin-bottom: 8px;
+
+    color: #657D67;
+    font-weight: 600;
+}
+
+.phone-number::before {
+    background-image: url('assets/img/ico/phone-call.svg');
+}
+
+
+.store-address::before {    
+    background-image: url('assets/img/ico/location-ico-2.svg');
+}
+
+.phone-block .label {
+    margin: 0;
+    margin-left: 38px;
+    font-family: 'Inter';
+    font-style: normal;    
+    font-size: 13px;    
+}
+
+.go-to-route {
+    display: block;
+    margin-left: 38px;
+
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    color:#2B2D2F;
+}
+
+.phone-block .social-icon {
+    background-size: 56px;
+}
+
+.phone-block .social-link {
+    width: 56px;
+    min-height: 56px;
+}
+
+/* ************ Контакты Финиш **************  */
 
 
 

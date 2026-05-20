@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Разводящая мебель на заказ</title>
+    <title>Авалон - стильные шкафы купэ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>    
@@ -16,10 +16,10 @@
 
                 <ul class="navigation-list">
                     <li class="navigation-item">
-                        <a class="navigation-link" href="catalog.html">Каталог мебели</a>
+                        <a class="navigation-link navigation-link-current" href="#">Каталог мебели</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link navigation-link-current" href="#">Мебель на заказ</a>
+                        <a class="navigation-link" href="mebel-na-zakaz.html">Мебель на заказ</a>
                     </li>
                     <li class="navigation-item">
                         <a class="navigation-link" href="#">О компании</a>
@@ -34,7 +34,7 @@
                         <a class="navigation-link" href="#">Блог</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="contacts.html">Контакты</a>
+                        <a class="navigation-link" href="#">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -120,27 +120,85 @@
         </section>
         
         <div class="content">            
-            <h1 class="title-h1">Мебель на заказ</h1>
-            <p class="category-text-max-width">Все модели можно заказать как в готовом варианте, так и изготовить по вашим индивидуальным размерам — мы адаптируем любую мебель из каталога под ваш дизайн и пространство.</p>
-            <section>
-                <ul class="category-list mebel-page">
-                    <li class="category-item category-item-big">                        
-                        <img src="assets/img/preview-category/shkafy-na-zakaz.webp" width="791" height="360" alt="">
-                        <h3 class="title">Шкафы на заказ</h3>
-                        <a class="btn btn-color-primary btn-category" href="cupboards.html"><span class="text">Смотреть в каталоге</span></a>                        
-                    </li>
-                    <li class="category-item category-item-big">                        
-                        <img src="assets/img/preview-category/kuhni-na-zakaz.webp" width="791" height="360" alt="">
-                        <h3 class="title">Кухни на заказ</h3>
-                        <a class="btn btn-color-primary btn-category" href="#"><span class="text">Смотреть в каталоге</span></a>
-                    </li>                   
-                </ul>
-            </section> 
-            
-            <section class="category-description" style="padding-left: 0;">
-                <h3 class="category-description-title">SEO заголовок</h3>
-                <p>Покупка мебели на заказ в нашем интернет-магазине — это отличный способ создать уникальный интерьер, который будет отражать ваш стиль и предпочтения. Мы предлагаем широкий ассортимент материалов и дизайнов, чтобы вы могли выбрать именно то, что вам нужно. Заказывая мебель у нас, вы получаете возможность адаптировать размеры и цвет под ваши требования, что делает каждую деталь идеальной для вашего пространства.</p>
-                <p>Кроме того, мебель на заказ — это не только стиль, но и качество. Мы работаем только с проверенными производителями, что гарантирует долговечность и надежность нашей продукции. Не упустите шанс преобразить свой дом с помощью индивидуально подобранной мебели, которая станет настоящим украшением вашего интерьера!</p>
+            <ol class="breadcrumbs-list">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="index.html">Главная</a>
+                </li>                
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link">Контакты</a>
+                </li>                
+            </ol> 
+            <h2 class="title-h2" style="font-weight: 400;">Наши контакты</h2> 
+
+            <section class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A285c8b3cdfc745de695a451148a9d3b733fa96cb8af2bf23c015ee761b275585&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+            </section>
+
+            <section class="contacts-footer">
+                <div class="feedback-block">
+                    <h3 class="title-h3">Есть предложение или хотите задать вопрос</h3>
+                    <p class="feedback-single-text">Наши специалисты свяжутся с вами как можно быстрее</p>
+
+                    <form class="feedback" action="">
+
+                        <label class="control" for="contacts-email">Ваша почта</label>
+                        <input type="email" name="email" id="contacts-email" class="field-email" placeholder="Кузякин Михаил">
+
+                        <label class="control" for="contacts-message">Ваш вопрос или сообщение</label>
+                        <textarea name="message" id="contacts-message" class="field-message" placeholder="Кузякин Михаил"></textarea>
+
+                        <div class="agree-wrap">
+                            <input type="checkbox" name="agree" class="agree-input">
+                            <p class="agree-text">Согласен с условиями обработки персональных данных и Политикой конфеденциальности</p>
+                        </div>
+                        
+
+                        <button type="submit" class="btn btn-color-primary btn-submit">Отправить</button>
+                    </form>
+                </div>
+
+                <div class="phone-block">
+                    <h3 class="title-h3">Вы можете связаться с нами</h3>
+                    <div class="data">
+                        <address class="phone">
+                            <p class="label">Наш телефон</p>
+                            <a class="footer-contact phone-number" href="tel:+79152900990">+7 (915) 290-09-90</a>
+                            <p class="label" style="font-size: 12px;">Отдел продаж</p>                            
+                        </address>
+                        <address class="phone">
+                            <p class="label">Наш телефон</p>
+                            <a class="footer-contact phone-number" href="tel:+749512134567">+7 (495) 1213-45-67</a>
+                            <p class="label" style="font-size: 12px;">Оптовый отдел</p>                            
+                        </address>
+                        <address>
+                            <p class="label">Наш магазин</p>
+                            <p class="footer-contact store-address">Москва, улица имени взятия<br>Мосссады 21</p>
+                            <a class="go-to-route" href="#">Проложить маршрут</a>
+                        </address>                        
+                    </div>
+
+                    <h3 class="title-h3" style="font-size: 20px; margin-bottom: 26px;">Мессенджеры для связи</h3>
+                    <ul class="social-list" style="padding: 0; border-bottom: none;">
+                        <li class="social-item">
+                            <a class="social-link" href="https://t.me/htmlacademy">
+                                <span class="visually-hidden">Телеграмм</span>
+                            <span class="social-icon social-icon-telegramm" aria-hidden="true" focusable="false"></span>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+                                <span class="visually-hidden">Max</span>
+                                <span class="social-icon social-icon-max" aria-hidden="true" focusable="false"></span>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link" href="https://vk.com/htmlacademy">
+                                <span class="visually-hidden">Вконтакте</span>
+                                <span class="social-icon social-icon-vk" aria-hidden="true" focusable="false"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </div>
         
