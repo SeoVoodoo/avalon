@@ -65,6 +65,11 @@ img {
   object-fit: cover;
 }
 
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
 .title-h1-home {
     margin: 0;
     margin-bottom: 64px;
@@ -2038,6 +2043,7 @@ p:has(.developer) {
 	left: 0;
 	bottom: 0;
 	right: 0;
+    z-index: 1000;
 
 	padding: 30px;
 	background-color: #80808070;
@@ -2064,7 +2070,7 @@ p:has(.developer) {
 }
 
 .modal-wrapper {
-    position: relative;
+    position: relative;    
 
 	padding: 24px;	
 	max-width: 375px;
