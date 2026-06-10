@@ -2032,6 +2032,115 @@ p:has(.developer) {
     color: inherit;
 }
 
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	padding: 30px;
+	background-color: #80808070;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	pointer-events: none;
+	opacity: 0;
+
+	transform: scale(1.15);
+	transition: transform 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+		opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.modal--open {
+	pointer-events: auto;
+	opacity: 1;    
+    
+	transform: scale(1);
+	transition:
+    transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+    opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.modal-wrapper {
+    position: relative;
+
+	padding: 24px;	
+	max-width: 375px;
+	width: 80%;
+    
+	background-color: #ffffff;	
+}
+
+.btn--close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.modal-title {
+    margin: 0;
+    margin-bottom: 12px;
+
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;    
+}
+
+.modal-text {
+    margin: 0;
+    margin-bottom: 64px;
+
+    font-family: 'Inter';
+    font-size: 18px;
+}
+
+.modal .control {
+    display: block;
+    margin-bottom: 8px;
+
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.modal .field-phone {
+    width: 100%;
+    min-height: 54px;
+    padding: 16px;
+    margin-bottom: 8px;
+
+    border: 1px solid rgba(229, 229, 231, 1);
+    background-color: #F8F9FB;    
+    font-size: 14px;
+}
+
+.modal .field-phone::placeholder {
+    color: #2B2D2F;
+}
+
+.modal .field-phone:focus-visible {
+    outline: rgb(165, 165, 165) solid 1px;
+}
+
+.modal .agree-text {
+    padding-top: 16px;
+    color: #252525;
+}
+
+.modal .btn-submit {
+    max-width: 360px;
+    width: 100%;
+}
+
+
+
 @media screen and (max-width: 1440px) {
     .product-feedback {
         grid-template-columns: 1fr;
@@ -2050,9 +2159,7 @@ p:has(.developer) {
     .manager {
         grid-column: 1/2;
         grid-row: 3/4; 
-    }
-
-    
+    }    
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1440px) {
@@ -2102,6 +2209,41 @@ p:has(.developer) {
     .product-footer  {
         margin-left: 56px;
         padding-left: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .colors-item {
+        width: 80px;
+        height: 80px;
+    }
+
+    .product-feedback {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-feedback {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .product-feedback .social-list {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .manager {
+        grid-column: 1/2;
+        grid-row: 3/4; 
+    }
+
+    .product-feedback .social-link {
+        width: 48px;
+        min-height: 48px;
+    }
+
+    .product-feedback .social-icon {
+        background-size: 48px;
     }
 }
 

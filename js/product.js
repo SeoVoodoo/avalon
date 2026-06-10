@@ -42,3 +42,16 @@ accordeonTitles.forEach(button => {
 
   });
 })
+
+
+const btnOpen = document.querySelectorAll('.btn--open-modal');
+const btnClose = document.querySelector('.btn--close-modal');
+const modal = document.querySelector('.modal');
+
+const modalViewHandler = (evt) => {
+  evt.preventDefault();
+	modal.classList.toggle('modal--open');
+}
+
+btnOpen.forEach((btn) => btn.addEventListener('click', modalViewHandler));
+btnClose.addEventListener('click', modalViewHandler);

@@ -16,7 +16,7 @@
 
                 <ul class="navigation-list">
                     <li class="navigation-item">
-                        <a class="navigation-link navigation-link-current" href="#">Каталог мебели</a>
+                        <a class="navigation-link navigation-link-current" href="catalog.html">Каталог мебели</a>
                     </li>
                     <li class="navigation-item">
                         <a class="navigation-link" href="mebel-na-zakaz.html">Мебель на заказ</a>
@@ -34,7 +34,7 @@
                         <a class="navigation-link" href="#">Блог</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="#">Контакты</a>
+                        <a class="navigation-link" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -125,7 +125,7 @@
                     <a class="breadcrumbs-link" href="index.html">Главная</a>
                 </li>                
                 <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link">Каталог</a>
+                    <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
                 </li>    
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link">Шкафы-купе</a>
@@ -168,7 +168,7 @@
                     <div class="product-feedback">
                         <button 
                             type="button" 
-                            class="btn btn-color-primary btn-product btn-feedback"
+                            class="btn btn-color-primary btn-product btn-feedback btn--open-modal"
                         >
                             Связаться с нами
                         </button>
@@ -300,7 +300,7 @@
                                     </li>
                                 </ul>
 
-                                <p class="amount-color-note">Более 100 цветов на заказ за 45 дней <a href="">связаться с нами</a></p>
+                                <p class="amount-color-note">Более 100 цветов на заказ за 45 дней <a href='#' class="btn--open-modal">связаться с нами</a></p>
                                 <p class="option-title">Выберите размер (ДхВхГ, см)</p>
 
                                 <ul class="size-list">
@@ -469,9 +469,28 @@
                 </li> 
             </ul>  
         </section>
-        
-        
     </main> 
+    <div class="modal">
+        <div class="modal-wrapper">
+        <button  type="button" class="btn--close-modal">
+            <img src="assets/img/ico/close.svg" width="24" height="24" alt="закрыть модальное окно">
+        </button>
+        <h5 class="modal-title">Хотите заказать?</h5>
+        <p class="modal-text">Наши специалисты свяжутся с вами как можно быстрее</p>
+
+        <form action="" method="post">
+            <label class="control" for="enter-phone">Ваш телефон</label>                
+            <input type="phone" name="phone" id="enter-phone" class="field-phone" placeholder="+7 (---) --- -- --">
+            
+            <div class="agree-wrap">
+                <input type="checkbox" name="agree" class="agree-input" width="16" height="16">
+                <p class="agree-text">Согласен с условиями обработки персональных данных и Политикой конфеденциальности</p>
+            </div>
+            <button type="submit" class="btn btn-color-primary btn-submit">Отправить</button>
+        </form>
+        
+        </div>
+    </div>
     <script src="js/script.js"></script>  
     <script src="js/product.js"></script> 
 </body>
