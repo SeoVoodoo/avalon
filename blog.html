@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <main class="main">
+        <section class="sidebar">
+            <nav class="navigation">
+                <a class="navigation-logo" href="index.html">
+                    <img src="assets/img/logo.png" width="240" height="68" alt="логотип сайта">
+                </a>
+
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="catalog.html">Каталог мебели</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="mebel-na-zakaz.html">Мебель на заказ</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">О компании</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Покупателям</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Наши работы</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="blog.html">Блог</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <footer class="footer">
+                <address class="footer-contacts">
+                    <p class="contact-label">Наш телефон</p>
+                    <a class="footer-contact footer-phone" href="tel:+749512134567">+7 (495) 1213-45-67</a>
+
+                    <p class="contact-label">Наш адрес</p>
+                    <p class="footer-contact footer-address">Москва, улица 2000 лет взятия Мосссады 32</p>
+                </address>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a class="social-link" href="https://t.me/htmlacademy">
+                            <span class="visually-hidden">Телеграмм</span>
+                           <span class="social-icon social-icon-telegramm" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+                            <span class="visually-hidden">Max</span>
+                            <span class="social-icon social-icon-max" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://vk.com/htmlacademy">
+                            <span class="visually-hidden">Вконтакте</span>
+                            <span class="social-icon social-icon-vk" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                </ul>
+                <p><a class="developer" href="https://seovoodoo.guru">Разработано в СеоВуду</a></p>
+            </footer>
+            <button class="btn-menu-close" type="button">
+                <img src="assets/img/ico/close.svg" width="40" height="40" alt="закрыть меню">
+            </button>
+        </section>
+
+        <section class="sidebar-mobile">
+            <nav class="navigation" style="flex-grow: 0">
+                <a class="navigation-logo" href="/" style="padding: 0 4px 16px; transition: opacity 0.3s linear 0.3s;">
+                    <img src="assets/img/logo-mobile.svg" width="48" height="72" alt="логотип сайта">
+                </a>
+            </nav>
+
+            <button class="btn-menu-open" type="button">
+                <img src="assets/img/ico/menu.svg" width="40" height="40" alt="открыть меню">
+            </button>
+            
+
+            <footer class="footer" style="padding: 0; transition: opacity 0.3s linear 0.3s;">
+                <address class="footer-contacts">                    
+                    <a 
+                        class="footer-contact footer-phone"  
+                        href="tel:+749512134567"
+                        style="width: 24px; margin: 0 auto 36px;"
+                    >
+                    </a>                    
+                </address>
+
+                <ul class="social-list" style="flex-direction: column; align-items: center; padding: 0 0 72px;">
+                    <li class="social-item">
+                        <a class="social-link" href="https://t.me/htmlacademy">
+                            <span class="visually-hidden">Телеграмм</span>
+                           <span class="social-icon social-icon-telegramm" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+                            <span class="visually-hidden">Max</span>
+                            <span class="social-icon social-icon-max" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://vk.com/htmlacademy">
+                            <span class="visually-hidden">Вконтакте</span>
+                            <span class="social-icon social-icon-vk" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                </ul>                
+            </footer>
+        </section>
+        
+        <div class="content">            
+            <ol class="breadcrumbs-list">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="index.html">Главная</a>
+                </li>                
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link">Блог</a>
+                </li>                
+            </ol> 
+            
+            
+            <section class="articles">
+                <h2 class="title-h2 blog">Интересные статьи</h2>
+                <p class="note">Посмотрите что мы уже делали для наших клиентов</p>   
+                <ul class="article-list">
+                    <li class="article-item">
+                        <image src="assets/img/blog/prev-article.webp" width="366" height="275" alt="" />
+                        <div class="article-info">
+                            <p class="article-indicators">
+                                <span class="article-date">3 июня 25</span>
+                                <span class="article-views">23 453</span>
+                                <span class="time-to-read">5 минут</span>
+                            </p>
+                            <p class="product-name">Шкаф на заказ или готовое решение: что выбрать для вашего дома?</p>
+                            <p class="short-description">Обустройство дома или квартиры всегда начинается с планирования пространства. Один из самых важных этапов — выбор системы хранения.</p>                            
+                            <a class="read-more" href="article-1.html">Читать дальше</a>
+                        </div>                        
+                    </li>
+                    <li class="article-item">
+                        <image src="assets/img/blog/prev-article.webp" width="366" height="275" alt="" />
+                        <div class="article-info">
+                            <p class="article-indicators">
+                                <span class="article-date">3 июня 25</span>
+                                <span class="article-views">23 453</span>
+                                <span class="time-to-read">5 минут</span>
+                            </p>
+                            <p class="product-name">Шкаф на заказ или готовое решение: что выбрать для вашего дома?</p>
+                            <p class="short-description">Обустройство дома или квартиры всегда начинается с планирования пространства. Один из самых важных этапов — выбор системы хранения.</p>                            
+                            <a class="read-more" href="article-1.html">Читать дальше</a>
+                        </div>                        
+                    </li>
+                    <li class="article-item">
+                        <image src="assets/img/blog/prev-article.webp" width="366" height="275" alt="" />
+                        <div class="article-info">
+                            <p class="article-indicators">
+                                <span class="article-date">3 июня 25</span>
+                                <span class="article-views">23 453</span>
+                                <span class="time-to-read">5 минут</span>
+                            </p>
+                            <p class="product-name">Шкаф на заказ или готовое решение: что выбрать для вашего дома?</p>
+                            <p class="short-description">Обустройство дома или квартиры всегда начинается с планирования пространства. Один из самых важных этапов — выбор системы хранения.</p>                            
+                            <a class="read-more" href="article-1.html">Читать дальше</a>
+                        </div>                        
+                    </li>
+                    <li class="article-item">
+                        <image src="assets/img/blog/prev-article.webp" width="366" height="275" alt="" />
+                        <div class="article-info">
+                            <p class="article-indicators">
+                                <span class="article-date">3 июня 25</span>
+                                <span class="article-views">23 453</span>
+                                <span class="time-to-read">5 минут</span>
+                            </p>
+                            <p class="product-name">Шкаф на заказ или готовое решение: что выбрать для вашего дома?</p>
+                            <p class="short-description">Обустройство дома или квартиры всегда начинается с планирования пространства. Один из самых важных этапов — выбор системы хранения.</p>                            
+                            <a class="read-more" href="article-1.html">Читать дальше</a>
+                        </div>                        
+                    </li>
+                    <li class="article-item">
+                        <image src="assets/img/blog/prev-article.webp" width="366" height="275" alt="" />
+                        <div class="article-info">
+                            <p class="article-indicators">
+                                <span class="article-date">3 июня 25</span>
+                                <span class="article-views">23 453</span>
+                                <span class="time-to-read">5 минут</span>
+                            </p>
+                            <p class="product-name">Шкаф на заказ или готовое решение: что выбрать для вашего дома?</p>
+                            <p class="short-description">Обустройство дома или квартиры всегда начинается с планирования пространства. Один из самых важных этапов — выбор системы хранения.</p>                            
+                            <a class="read-more" href="article-1.html">Читать дальше</a>
+                        </div>                        
+                    </li>
+                    <li class="article-item">
+                        <image src="assets/img/blog/prev-article.webp" width="366" height="275" alt="" />
+                        <div class="article-info">
+                            <p class="article-indicators">
+                                <span class="article-date">3 июня 25</span>
+                                <span class="article-views">23 453</span>
+                                <span class="time-to-read">5 минут</span>
+                            </p>
+                            <p class="product-name">Шкаф на заказ или готовое решение: что выбрать для вашего дома?</p>
+                            <p class="short-description">Обустройство дома или квартиры всегда начинается с планирования пространства. Один из самых важных этапов — выбор системы хранения.</p>                            
+                            <a class="read-more" href="article-1.html">Читать дальше</a>
+                        </div>                        
+                    </li>
+                    <li class="article-item">
+                        <image src="assets/img/blog/prev-article.webp" width="366" height="275" alt="" />
+                        <div class="article-info">
+                            <p class="article-indicators">
+                                <span class="article-date">3 июня 25</span>
+                                <span class="article-views">23 453</span>
+                                <span class="time-to-read">5 минут</span>
+                            </p>
+                            <p class="product-name">Шкаф на заказ или готовое решение: что выбрать для вашего дома?</p>
+                            <p class="short-description">Обустройство дома или квартиры всегда начинается с планирования пространства. Один из самых важных этапов — выбор системы хранения.</p>                            
+                            <a class="read-more" href="article-1.html">Читать дальше</a>
+                        </div>                        
+                    </li>
+                    <li class="article-item">
+                        <image src="assets/img/blog/prev-article.webp" width="366" height="275" alt="" />
+                        <div class="article-info">
+                            <p class="article-indicators">
+                                <span class="article-date">3 июня 25</span>
+                                <span class="article-views">23 453</span>
+                                <span class="time-to-read">5 минут</span>
+                            </p>
+                            <p class="product-name">Шкаф на заказ или готовое решение: что выбрать для вашего дома?</p>
+                            <p class="short-description">Обустройство дома или квартиры всегда начинается с планирования пространства. Один из самых важных этапов — выбор системы хранения.</p>                            
+                            <a class="read-more" href="article-1.html">Читать дальше</a>
+                        </div>                        
+                    </li>
+                </ul>
+                <div class="pagination-wrap">
+                    <ul class="pagination-list">
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link pagination-link-prev"><span class="control">Назад<span></a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link pagination-link-current">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link pagination-text">...</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link">5</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link">6</a>
+                        </li>                    
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link pagination-link-next"><span class="control">Вперед</span></a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-color-primary btn-show-more">Показать ещё <span class="items-left-show">8</span></button>
+                </div>                
+            </section>           
+        </div>      
+        
+    </main> 
+    <script src="js/script.js"></script>    
+</body>
+</html>
