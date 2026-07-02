@@ -24,6 +24,7 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -2412,15 +2413,30 @@ p:has(.developer) {
 /************ Статья Старт ***********/
 
 .article-table-content {
-    max-width: 366px;
+    width: 366px;
+
+    position: relative;
+}
+
+.article-table-content .sidebar-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: 100;
+    
 }
 
 .current-article {
     display: grid;
-    grid-template-columns: minmax(500px, 900px) 1fr;
+    grid-template-columns: minmax(280px, 900px) 1fr;
     gap: 24px;
 
     padding: 64px 0;
+}
+
+.article-body a {
+    color: #657D67;
 }
 
 .article-author {
@@ -2430,6 +2446,7 @@ p:has(.developer) {
     /* align-content: center; */
     
     padding: 24px;
+    margin-bottom: 24px;
     border: 1px solid #E5E5E7;
 }
 
@@ -2465,6 +2482,104 @@ p:has(.developer) {
 .article-author .article-indicators {
     grid-column: 1/4;
     grid-row: 3/4;
+}
+
+.main-headlines {
+    padding: 24px;
+    border: 1px solid #E5E5E7;
+}
+
+.main-headlines p {
+    margin: 0;
+    margin-bottom: 24px;
+
+    font-weight: 600;
+    font-size: 20px;
+    color: #657D67;
+}
+
+.main-headlines .title-list {
+    margin: 0;
+    padding: 0;
+}
+
+.main-headlines .title-item {    
+    font-family: 'Inter';
+    font-size: 14px;
+}
+
+.main-headlines .title-current {
+    color: #657D67;
+}
+
+.article-body .table-wrap {
+    overflow: auto;
+}
+
+.article-body table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 36px;
+}
+
+.article-body table td {
+    padding: 24px;
+}
+
+.article-body tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.article-body thead,
+.article-body tbody tr:nth-child(even) {
+    background-color: #F8F9FB;
+}
+
+.article-body thead {
+    text-align: center;
+
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.single-img {
+    margin: 15px 0 50px;
+    text-align: center;
+}
+
+.article-body .mark {
+    position: relative;
+    margin-bottom: 36px;
+    padding: 24px;
+    padding-left: 112px;
+
+    background-color: #F8F9FB;
+}
+
+.article-body .mark::before {
+    content: '';
+
+    position: absolute;
+    top: 24px;
+    left: 24px;
+
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-image: url('assets/img/blog/check-circle-broken.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.article-body h2 {
+    margin-top: 36px;
+}
+
+.article-body .bold {
+    margin: 0;
+    margin-bottom: 24px;
+
+    font-weight: 700;    
 }
 
 .callback-block {
@@ -2536,7 +2651,7 @@ p:has(.developer) {
         'agree agree';
     column-gap: 24px;
 
-    width: 632px;
+    max-width: 632px;
     margin: 0 auto 24px;
     padding: 24px;
     border-radius: 4px;
@@ -2621,12 +2736,182 @@ p:has(.developer) {
 
 .free-measurement .btn-measurement {
     grid-area: button;
-}
-
-.btn-measurement {
+        
     border: none;
     padding: 18px 24px;
 }
+
+
+.callback-block .advantages {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.callback-block .advantages-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.callback-block dt {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    color: #DDC4A4;
+
+    text-align: center;
+}
+
+.callback-block dd {
+    margin: 0;
+
+    font-family: 'Inter';
+    color: #F9F9F9;
+
+    text-align: center;
+}
+
+.callback-block .small {    
+    font-size: 24px;
+}
+
+.article-table-content-inner {
+    display: none;    
+}
+
+@media screen and (max-width: 1280px) {
+    .current-article {
+        padding: 20px 0;
+    }
+
+    .article-table-content {
+        display: none;
+    }
+
+    .article-table-content-inner {        
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        justify-content: space-between;
+    }
+
+    .article-author,
+    .main-headlines {
+        width: 330px;
+        flex-grow: 1;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .callback-block {
+        background-color: #0A77FF;
+
+        min-height: 512px;
+        margin-bottom: 36px;
+
+        background-size: cover;
+    }
+
+    .free-measurement {        
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        'label'
+        'input'
+        'alert'
+        'agree'
+        'button'; 
+
+        max-width: 480px;
+    }
+    
+
+    .callback-block-title {
+        margin: 24px 0 16px;
+        padding: 0 16px;
+
+        font-size: 32px;
+    }
+
+    .buns {
+        margin-bottom: 16px;
+        gap: 24px;
+    }
+
+    .free-measurement .btn-measurement {
+        margin: 0 auto;
+
+        max-width: 200px;
+    }
+
+    .free-measurement .agree-wrap {
+        margin-bottom: 18px;
+    }
+
+    .free-measurement .agree-text {
+        line-height: 1.05;
+    }
+
+    .free-measurement .agree-input {
+        align-self: start;
+    }
+
+    .callback-block dt {
+        font-size: 28px;
+    }
+
+    .callback-block dd {
+        gap: 16px;
+
+        font-size: 13px;        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .callback-block {
+        padding: 16px;
+    }
+
+    .buns {        
+        row-gap: 12px;
+        column-gap: 14px;
+    }
+
+    .callback-block .advantages {        
+        margin: 0 auto 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .callback-block {
+        padding: 10px;
+    }
+
+    .buns {
+        flex-direction: column;
+        align-items: center;
+
+        line-height: 100%;
+    }
+
+    .callback-block .advantages {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .callback-block .advantages-item {
+        gap: 0;
+    }
+}
+
 /************ Статья Финиш ***********/
 
 
