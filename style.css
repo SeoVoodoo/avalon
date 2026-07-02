@@ -2503,12 +2503,14 @@ p:has(.developer) {
     padding: 0;
 }
 
-.main-headlines .title-item {    
+.main-headlines a {    
     font-family: 'Inter';
     font-size: 14px;
+    color: inherit;
+    text-decoration: none;
 }
 
-.main-headlines .title-current {
+.main-headlines a:hover {
     color: #657D67;
 }
 
