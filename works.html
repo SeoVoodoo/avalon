@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши работы</title>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <main class="main">
+        <section class="sidebar">
+            <nav class="navigation">
+                <a class="navigation-logo" href="index.html">
+                    <img src="assets/img/logo.png" width="240" height="68" alt="логотип сайта">
+                </a>
+
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="catalog.html">Каталог мебели</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="mebel-na-zakaz.html">Мебель на заказ</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">О компании</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Покупателям</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="works.html">Наши работы</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="blog.html">Блог</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <footer class="footer">
+                <address class="footer-contacts">
+                    <p class="contact-label">Наш телефон</p>
+                    <a class="footer-contact footer-phone" href="tel:+749512134567">+7 (495) 1213-45-67</a>
+
+                    <p class="contact-label">Наш адрес</p>
+                    <p class="footer-contact footer-address">Москва, улица 2000 лет взятия Мосссады 32</p>
+                </address>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a class="social-link" href="https://t.me/htmlacademy">
+                            <span class="visually-hidden">Телеграмм</span>
+                           <span class="social-icon social-icon-telegramm" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+                            <span class="visually-hidden">Max</span>
+                            <span class="social-icon social-icon-max" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://vk.com/htmlacademy">
+                            <span class="visually-hidden">Вконтакте</span>
+                            <span class="social-icon social-icon-vk" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                </ul>
+                <p><a class="developer" href="https://seovoodoo.guru">Разработано в СеоВуду</a></p>
+            </footer>
+            <button class="btn-menu-close" type="button">
+                <img src="assets/img/ico/close.svg" width="40" height="40" alt="закрыть меню">
+            </button>
+        </section>
+
+        <section class="sidebar-mobile">
+            <nav class="navigation" style="flex-grow: 0">
+                <a class="navigation-logo" href="/" style="padding: 0 4px 16px; transition: opacity 0.3s linear 0.3s;">
+                    <img src="assets/img/logo-mobile.svg" width="48" height="72" alt="логотип сайта">
+                </a>
+            </nav>
+
+            <button class="btn-menu-open" type="button">
+                <img src="assets/img/ico/menu.svg" width="40" height="40" alt="открыть меню">
+            </button>
+            
+
+            <footer class="footer" style="padding: 0; transition: opacity 0.3s linear 0.3s;">
+                <address class="footer-contacts">                    
+                    <a 
+                        class="footer-contact footer-phone"  
+                        href="tel:+749512134567"
+                        style="width: 24px; margin: 0 auto 36px;"
+                    >
+                    </a>                    
+                </address>
+
+                <ul class="social-list" style="flex-direction: column; align-items: center; padding: 0 0 72px;">
+                    <li class="social-item">
+                        <a class="social-link" href="https://t.me/htmlacademy">
+                            <span class="visually-hidden">Телеграмм</span>
+                           <span class="social-icon social-icon-telegramm" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+                            <span class="visually-hidden">Max</span>
+                            <span class="social-icon social-icon-max" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://vk.com/htmlacademy">
+                            <span class="visually-hidden">Вконтакте</span>
+                            <span class="social-icon social-icon-vk" aria-hidden="true" focusable="false"></span>
+                        </a>
+                    </li>
+                </ul>                
+            </footer>
+        </section>
+        
+        <div class="content" style="background-color: #ffffff;">            
+            <ol class="breadcrumbs-list">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="index.html">Главная</a>
+                </li>                
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link">Наши работы</a>
+                </li>                
+            </ol> 
+            
+            
+            <section class="works">
+                <h2 class="title-h2 blog">Наши проекты</h2>
+                <p class="note">Посмотрите что мы уже делали для наших клиентов</p>  
+
+                <div class="works-content">
+                    <div class="tabs">
+                        <button class="tablinks tablinks-active" data-place="dressing-rooms">
+                            <span>Гардеробные</span>
+                        </button>
+                        <button class="tablinks" data-place="hallways">
+                            <span>Прихожие</span>
+                        </button>
+                        <button class="tablinks" data-place="bedrooms">
+                            <span>Спальни</span>
+                        </button>   
+                        <button class="tablinks" data-place="children-rooms">
+                            <span>Детские</span>
+                        </button> 
+                        <button class="tablinks" data-place="kitchens">
+                            <span>Кухни</span>
+                        </button> 
+                        <button class="tablinks" data-place="wardrobes">
+                            <span>Шкафы</span>
+                        </button>                  
+                    </div>
+                    <div class="wrapper-tabcontent">
+                        <ul id="dressing-rooms" class="works-list tabcontent tabcontent-active">                                                                    
+                            <li class="article-item works-item">
+                                <div class="swiper">                                    
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/dressing-rooms/1/garderobnaya-1-1.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/dressing-rooms/1/garderobnaya-1-2.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/dressing-rooms/1/garderobnaya-1-3.webp"  
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/dressing-rooms/1/garderobnaya-1-4.webp"  
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/dressing-rooms/1/garderobnaya-1-5.webp"  
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/dressing-rooms/1/garderobnaya-1-6.webp"  
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>                                    
+                                    </div>                                    
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="article-info">                                    
+                                    <a class="product-name">Гардеробная с раздвижными дверьми</a>
+                                    <p class="short-description">
+                                        Ограниченное пространство, которое нужно было использовать по максимуму
+                                    </p>  
+                                    <dl>
+                                        <dt>Размеры (ВхШхГ):</dt>
+                                        <dd>200×240×45 см</dd>
+
+                                        <dt>Стоимость проекта:</dt>
+                                        <dd class="price">&nbsp;52 000 ₽</dd>
+
+                                        <dt>Изготовлен за:</dt>
+                                        <dd>10 дней</dd>
+                                    </dl>
+                                </div>  
+                            </li> 
+                            <li class="article-item works-item">
+                                <div class="swiper">                                    
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/dressing-rooms/2/garderobnaya-2-1.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/dressing-rooms/2/garderobnaya-2-2.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/dressing-rooms/2/garderobnaya-2-3.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/dressing-rooms/2/garderobnaya-2-4.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>                    
+                                    </div>                                    
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="article-info">                                    
+                                    <a class="product-name">Гардеробная для спальни</a>
+                                    <p class="short-description">
+                                        Просторная гардеробная для всей семьи
+                                    </p>  
+                                    <dl>
+                                        <dt>Размеры (ВхШхГ):</dt>
+                                        <dd>200×240×45 см</dd>
+
+                                        <dt>Стоимость проекта:</dt>
+                                        <dd class="price">&nbsp;52 000 ₽</dd>
+
+                                        <dt>Изготовлен за:</dt>
+                                        <dd>10 дней</dd>
+                                    </dl>
+                                </div>
+                            </li>                             
+                        </ul>
+                        <ul id="hallways" class="works-list tabcontent">
+                            <li class="article-item works-item">
+                                <div class="swiper">                                    
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/hallways/1/prihozhaya-1-1.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/hallways/1/prihozhaya-1-2.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>                 
+                                    </div>                                    
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="article-info">                                    
+                                    <a class="product-name">Прихожая ШВ</a>
+                                    <p class="short-description">
+                                        Комплект из шкафа и открытой вешалки
+                                    </p>  
+                                    <dl>
+                                        <dt>Размеры (ВхШхГ):</dt>
+                                        <dd>200×240×45 см</dd>
+
+                                        <dt>Стоимость проекта:</dt>
+                                        <dd class="price">&nbsp;52 000 ₽</dd>
+
+                                        <dt>Изготовлен за:</dt>
+                                        <dd>10 дней</dd>
+                                    </dl>
+                                </div>  
+                            </li> 
+                            <li class="article-item works-item">
+                                <div class="swiper">                                    
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/hallways/2/prihozhaya-2-1.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/hallways/2/prihozhaya-2-2.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/hallways/2/prihozhaya-2-3.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/hallways/2/prihozhaya-2-4.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div> 
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/hallways/2/prihozhaya-2-5.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/hallways/2/prihozhaya-2-6.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>                   
+                                    </div>                                    
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="article-info">                                    
+                                    <a class="product-name">Прихожая классика</a>
+                                    <p class="short-description">
+                                        Компактная и в то же время вместительная прихожая.
+                                    </p>  
+                                    <dl>
+                                        <dt>Размеры (ВхШхГ):</dt>
+                                        <dd>200×240×45 см</dd>
+
+                                        <dt>Стоимость проекта:</dt>
+                                        <dd class="price">&nbsp;52 000 ₽</dd>
+
+                                        <dt>Изготовлен за:</dt>
+                                        <dd>10 дней</dd>
+                                    </dl>
+                                </div>
+                            </li>                                                                          
+                        </ul>
+                        <ul id="bedrooms" class="works-list tabcontent">
+                            <li class="article-item works-item">
+                                <div class="swiper">                                    
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/bedrooms/1/spalnya-1-1.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/bedrooms/1/spalnya-1-2.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/bedrooms/1/spalnya-1-3.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div> 
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/bedrooms/1/spalnya-1-4.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>                
+                                    </div>                                    
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="article-info">                                    
+                                    <a class="product-name">Спальня комплект</a>
+                                    <p class="short-description">
+                                        Спальня с подвесными тумбами
+                                    </p>  
+                                    <dl>
+                                        <dt>Размеры (ВхШхГ):</dt>
+                                        <dd>200×240×45 см</dd>
+
+                                        <dt>Стоимость проекта:</dt>
+                                        <dd class="price">&nbsp;52 000 ₽</dd>
+
+                                        <dt>Изготовлен за:</dt>
+                                        <dd>10 дней</dd>
+                                    </dl>
+                                </div>  
+                            </li> 
+                            <li class="article-item works-item">
+                                <div class="swiper">                                    
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/bedrooms/2/spalnya-2-1.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/bedrooms/2/spalnya-2-2.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/bedrooms/2/spalnya-2-3.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/bedrooms/2/spalnya-2-4.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div> 
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/bedrooms/2/spalnya-2-5.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>                                                          
+                                    </div>                                    
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="article-info">                                    
+                                    <a class="product-name">Спальня ТВ</a>
+                                    <p class="short-description">
+                                        Мебель в спальню со стильными шкафами и ТВ тумбой.
+                                    </p>  
+                                    <dl>
+                                        <dt>Размеры (ВхШхГ):</dt>
+                                        <dd>200×240×45 см</dd>
+
+                                        <dt>Стоимость проекта:</dt>
+                                        <dd class="price">&nbsp;52 000 ₽</dd>
+
+                                        <dt>Изготовлен за:</dt>
+                                        <dd>10 дней</dd>
+                                    </dl>
+                                </div>
+                            </li>                                                                         
+                        </ul>
+                        <ul id="children-rooms" class="works-list tabcontent">
+                            <li class="article-item works-item">
+                                <div class="swiper">                                    
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/children-rooms/1/detskaya-1-1.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/children-rooms/1/detskaya-1-2.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/children-rooms/1/detskaya-1-3.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div> 
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/children-rooms/1/detskaya-1-4.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/children-rooms/1/detskaya-1-5.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>                 
+                                    </div>                                    
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="article-info">                                    
+                                    <a class="product-name">Детская комната ДК</a>
+                                    <p class="short-description">
+                                        Компактная, но и вместительная мебель для детской комнаты.
+                                    </p>  
+                                    <dl>
+                                        <dt>Размеры (ВхШхГ):</dt>
+                                        <dd>200×240×45 см</dd>
+
+                                        <dt>Стоимость проекта:</dt>
+                                        <dd class="price">&nbsp;52 000 ₽</dd>
+
+                                        <dt>Изготовлен за:</dt>
+                                        <dd>10 дней</dd>
+                                    </dl>
+                                </div>  
+                            </li> 
+                            <li class="article-item works-item">
+                                <div class="swiper">                                    
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/children-rooms/2/detskaya-2-1.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/children-rooms/2/detskaya-2-2.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>                                            
+                                    </div>                                    
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="article-info">                                    
+                                    <a class="product-name">Детская комната 1+1</a>
+                                    <p class="short-description">
+                                        Рабочая зона и вместительный шкаф с открытыми полками.
+                                    </p>  
+                                    <dl>
+                                        <dt>Размеры (ВхШхГ):</dt>
+                                        <dd>200×240×45 см</dd>
+
+                                        <dt>Стоимость проекта:</dt>
+                                        <dd class="price">&nbsp;52 000 ₽</dd>
+
+                                        <dt>Изготовлен за:</dt>
+                                        <dd>10 дней</dd>
+                                    </dl>
+                                </div>
+                            </li>                                                                         
+                        </ul>
+                        <ul id="kitchens" class="works-list tabcontent">
+                            <li class="article-item works-item">
+                                <div class="swiper">                                    
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/kitchens/1/kuhnya-1-1.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/kitchens/1/kuhnya-1-2.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/kitchens/1/kuhnya-1-3.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div> 
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/kitchens/1/kuhnya-1-4.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>       
+                                    </div>                                    
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="article-info">                                    
+                                    <a class="product-name">Кухня Модерн</a>
+                                    <p class="short-description">
+                                        Средняя кухня с доводчиками и подсветкой.
+                                    </p>  
+                                    <dl>
+                                        <dt>Размеры (ВхШхГ):</dt>
+                                        <dd>200×240×45 см</dd>
+
+                                        <dt>Стоимость проекта:</dt>
+                                        <dd class="price">&nbsp;52 000 ₽</dd>
+
+                                        <dt>Изготовлен за:</dt>
+                                        <dd>10 дней</dd>
+                                    </dl>
+                                </div>  
+                            </li> 
+                            <li class="article-item works-item">
+                                <div class="swiper">                                    
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/kitchens/2/kuhnya-2-1.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/kitchens/2/kuhnya-2-2.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div> 
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/kitchens/2/kuhnya-2-3.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div> 
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/kitchens/2/kuhnya-2-4.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div> 
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/kitchens/2/kuhnya-2-5.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/kitchens/2/kuhnya-2-6.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>  
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/kitchens/2/kuhnya-2-7.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>                                       
+                                    </div>                                    
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="article-info">                                    
+                                    <a class="product-name">Детская комната 1+1</a>
+                                    <p class="short-description">
+                                        Рабочая зона и вместительный шкаф с открытыми полками.
+                                    </p>  
+                                    <dl>
+                                        <dt>Размеры (ВхШхГ):</dt>
+                                        <dd>200×240×45 см</dd>
+
+                                        <dt>Стоимость проекта:</dt>
+                                        <dd class="price">&nbsp;52 000 ₽</dd>
+
+                                        <dt>Изготовлен за:</dt>
+                                        <dd>10 дней</dd>
+                                    </dl>
+                                </div>
+                            </li>                                                                         
+                        </ul>
+                        <ul id="wardrobes" class="works-list tabcontent">
+                            <li class="article-item works-item">
+                                <div class="swiper">                                    
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/wardrobes/1/shkaf-kupe-vstroennyj-1-1.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/wardrobes/1/shkaf-kupe-vstroennyj-1-2.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/wardrobes/1/shkaf-kupe-vstroennyj-1-3.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div> 
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/wardrobes/1/shkaf-kupe-vstroennyj-1-4.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div> 
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/wardrobes/1/shkaf-kupe-vstroennyj-1-5.webp"
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>      
+                                    </div>                                    
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="article-info">                                    
+                                    <a class="product-name">Спальня комплект</a>
+                                    <p class="short-description">
+                                        Спальня с подвесными тумбами
+                                    </p>  
+                                    <dl>
+                                        <dt>Размеры (ВхШхГ):</dt>
+                                        <dd>200×240×45 см</dd>
+
+                                        <dt>Стоимость проекта:</dt>
+                                        <dd class="price">&nbsp;52 000 ₽</dd>
+
+                                        <dt>Изготовлен за:</dt>
+                                        <dd>10 дней</dd>
+                                    </dl>
+                                </div>  
+                            </li> 
+                            <li class="article-item works-item">
+                                <div class="swiper">                                    
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/wardrobes/2/shkaf-raspashnoj-2-1.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img 
+                                                class="slider-img" 
+                                                src="assets/img/works/wardrobes/2/shkaf-raspashnoj-2-2.webp" 
+                                                width="496" 
+                                                height="278" 
+                                                alt=""
+                                            >
+                                        </div>                   
+                                    </div>                                    
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="article-info">                                    
+                                    <a class="product-name">Спальня ТВ</a>
+                                    <p class="short-description">
+                                        Мебель в спальню со стильными шкафами и ТВ тумбой.
+                                    </p>  
+                                    <dl>
+                                        <dt>Размеры (ВхШхГ):</dt>
+                                        <dd>200×240×45 см</dd>
+
+                                        <dt>Стоимость проекта:</dt>
+                                        <dd class="price">&nbsp;52 000 ₽</dd>
+
+                                        <dt>Изготовлен за:</dt>
+                                        <dd>10 дней</dd>
+                                    </dl>
+                                </div>
+                            </li>                                                                         
+                        </ul>
+                    </div>
+                    <div class="pagination-wrap">
+                        <ul class="pagination-list">
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link pagination-link-prev"><span class="control">Назад<span></a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link pagination-link-current">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link pagination-text">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">6</a>
+                            </li>                    
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link pagination-link-next"><span class="control">Вперед</span></a>
+                            </li>
+                        </ul>                        
+                    </div>  
+
+                    <div class="works-callback">
+                        <p class="next-project-title">Ваш проект может быть следующим</p>
+                        <p class="sale">+ получите скидку на комплектующие</p>
+                        <form action="" method="post" class="form">
+                            <label class="control" for="phone-input">Ваш телефон</label>
+                            <input class="field-phone" id="phone-input" type="tel" placeholder="+7 (---) --- -- --">
+
+                            <div class="agree-wrap">
+                                <input type="checkbox" name="agree" class="agree-input" width="16" height="16">
+                                <p class="agree-text">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                            </div>
+
+                            <button class="btn btn-color-primary btn-arrow-right btn-measurement" type="submit">
+                                <span class="text">Перезвоните мне</span>
+                            </button>            
+                        </form>                        
+                    </div>
+                </div>              
+            </section>           
+        </div>      
+        
+    </main> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>    
+    <script src="js/tabs.js"></script>    
+</body>
+</html>
